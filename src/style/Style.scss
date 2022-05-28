@@ -1,0 +1,48 @@
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/mixins.scss';
+
+body{
+    
+    box-sizing: border-box;
+}
+.navbar-nav{
+    padding: 5px 0px;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: auto;
+    box-shadow: 0 0 30px #f3f1f1;
+}
+
+.container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-search{
+    text-align: center;
+    .navbar-search input, button{
+        border-radius: 10px;       
+    }  
+}
+
+
+
+.nav-icon{
+    display: flex;
+    font-size: 25px;
+    color: $logo-color;
+    justify-content: space-between;
+}
+
+.nav-icon > div {
+    cursor: pointer;
+    span{
+        position: absolute;
+        margin-top: 2px;
+    }  
+}
+
+
+
+
+
