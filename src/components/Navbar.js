@@ -2,7 +2,7 @@ import { UserOutlined, NotificationOutlined, MessageOutlined, HomeOutlined, Sear
 import  logo from '../assets/LoGBooK.png'
 import React from 'react';
 import {useState, useEffect} from 'react'
-import navbarsearchh from '../assets/navbarsearch.svg'
+import navbarSearch from '../assets/navbarSearch.svg'
 
 const Navbar = () => {
 
@@ -19,7 +19,7 @@ const Navbar = () => {
           <div class="col-8  text-black">
             <div className='nav-search'>
               <input placeholder='Search'></input>
-              <img src={navbarsearchh} alt={navbarsearchh}/>
+              <img src={navbarSearch} alt={navbarSearch}/>
             </div>
           </div>
           <div class="col-2 nav-icon">
