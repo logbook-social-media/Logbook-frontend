@@ -1,25 +1,26 @@
 import { UserOutlined, NotificationOutlined, MessageOutlined, HomeOutlined, SearchOutlined, AudioOutlined} from '@ant-design/icons';
 import  logo from '../assets/LoGBooK.png'
-import { Input, Space } from 'antd'
 import React from 'react';
+import {useState, useEffect} from 'react'
+import navbarSearch from '../assets/navbarSearch.svg'
 
 const Navbar = () => {
 
-  const { Search } = Input;
-  const onSearch = (value: string) => console.log(value);
-  
+  const[searchTerm, setSearhTerm]= useState([])
+
   return (
     <>
     <div className='navbar-nav'>
       <div className='container'>
         <div className='row'>
-        <div class="col-2   text-black">
-          <img src={logo} alt={logo}/>
+          <div class="col-2   text-black">
+            <img src={logo} alt={logo}/>
           </div>
           <div class="col-8  text-black">
-          <div className='nav-search'>
-          <Search className='navbar-search' placeholder="input search text" onSearch={onSearch} />  
-        </div>
+            <div className='nav-search'>
+              <input placeholder='Search'></input>
+              <img src={navbarSearch} alt={navbarSearch}/>
+            </div>
           </div>
           <div class="col-2 nav-icon">
             <div>

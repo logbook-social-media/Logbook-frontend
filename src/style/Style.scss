@@ -8,9 +8,7 @@ body{
 }
 .navbar-nav{
     padding: 5px 0px;
-    border-bottom: solid 1px #e8e8e8;
-    overflow: auto;
-    box-shadow: 0 0 30px #f3f1f1;
+   
 }
 
 .container{
@@ -20,22 +18,27 @@ body{
 
 .nav-search{
     text-align: center;
-    background-color: $search-color;
-    .navbar-search input, span{
-        border-radius: 10px;  
+    width: 100%;
+    position: relative;
+    
+    input{
+        width: 100%;
         border: none;
         background-color: $search-color;
         box-sizing: border-box;
-        height: auto;
+        outline:none;
+        border-radius: 10px; 
+        padding-left: 32px;
+        line-height: 30px;
+        
     } 
-    .navbar-search input, button, span:hover{ 
-        border: none;
-        background-color: $search-color;
-      
-    } 
+    img{
+        position: absolute;
+        left: 7px;
+        top: 7px;
+        width: 17px;
+    }
 }
-
-
 
 .nav-icon{
     display: flex;
@@ -52,6 +55,8 @@ body{
         margin-top: 2px;
     }  
 }
+
+
 
 
 
