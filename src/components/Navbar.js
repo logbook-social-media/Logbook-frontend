@@ -2,7 +2,7 @@ import { UserOutlined, NotificationOutlined, MessageOutlined, HomeOutlined, Sear
 import  logo from '../assets/LoGBooK.png'
 import React from 'react';
 import {useState, useEffect} from 'react'
-import navbarSearch from '../assets/navbarSearch.svg'
+import navbarSearch from '../assets/navbarsearch.svg'
 
 const Navbar = () => {
 
@@ -27,13 +27,13 @@ const Navbar = () => {
               <HomeOutlined />
             </div>
             <div>
-              <UserOutlined /> 
-            </div>
-            <div>
               <NotificationOutlined  />
             </div>
             <div>
               <MessageOutlined />
+            </div>
+            <div>
+              <UserOutlined /> 
             </div> 
           </div>
         </div>
