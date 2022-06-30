@@ -17,10 +17,11 @@ body{
 }
 
 .nav-search{
-    text-align: center;
-    width: 100%;
-    position: relative;
     
+    width: 70%;
+    position: relative;
+    margin: auto;
+  
     input{
         width: 100%;
         border: none;
@@ -30,12 +31,17 @@ body{
         border-radius: 10px; 
         padding-left: 32px;
         line-height: 30px;
+        cursor: pointer;
         
     } 
+    input:focus{
+        border: 1px solid $search-border-color ;
+        cursor: auto;
+    }
     img{
         position: absolute;
-        left: 7px;
-        top: 7px;
+        left: 8px;
+        top: 8px;
         width: 17px;
     }
 }
@@ -43,8 +49,20 @@ body{
 .nav-icon{
     display: flex;
     font-size: 25px;
-    color: $logo-color;
+    
     justify-content: space-between;
+    div:nth-child(1){
+        color: $icon-color-blue;
+    }
+    div:nth-child(2){
+    color: $icon-color-pink;
+}
+    div:nth-child(3){
+        color: $icon-color-yellow;
+    }
+    div:nth-child(4){
+        color: $icon-color-red;
+    }
 }
 
 .nav-icon > div {
