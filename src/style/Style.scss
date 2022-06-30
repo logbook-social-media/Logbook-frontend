@@ -6,12 +6,11 @@ body{
     
     box-sizing: border-box;
 }
-.navbar-nav{
-    padding: 5px 0px;
-   
-}
 
-.container{
+.navbar-nav{
+    width: 70%;
+    margin: auto;
+    padding: 5px 0px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -73,6 +72,53 @@ body{
         margin-top: 2px;
     }  
 }
+
+.homebody{
+    width: 69%;
+    margin: auto;
+
+}
+
+.body-post{
+    
+    border: 1px solid black;
+}
+.sidebar{
+    overflow-y: scroll;
+    background-color: $search-color;
+    border-radius:10px ;
+}
+.sidebar-tag{
+    
+    
+    .agenda-title{
+        text-align: center;
+        margin-top: 5px;
+        h5{
+           font-weight: 10px; 
+           font-size: large;
+        }
+    }
+    .hashtag{
+        li{
+            list-style-type: none;
+        }
+        
+    }
+
+    .sidebar-button{
+        text-align: center;
+        cursor: pointer;
+        button{
+            border: none;
+           color: $logo-color; 
+           background-color: $search-color;
+        }
+        
+    }
+}
+
+
 
 
 
